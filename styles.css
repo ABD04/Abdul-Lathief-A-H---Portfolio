@@ -350,3 +350,13 @@ body{background:linear-gradient(180deg,#10070c,#190b12 46%,#10070c);font-family:
 .about-milestones{min-width:0}.about-milestone-label{margin:0 0 18px}.about-milestones ol{position:relative;display:grid;gap:0;margin:0;padding:0;list-style:none}.about-milestones ol:before{content:"";position:absolute;left:63px;top:10px;bottom:12px;width:1px;background:linear-gradient(180deg,rgba(216,140,168,.72),rgba(216,140,168,.18))}.about-milestones li{position:relative;display:grid;grid-template-columns:44px 12px minmax(0,1fr);gap:14px;align-items:center;min-height:33px}.about-milestones time{color:#bba8b0;font:400 8px var(--mono)}.milestone-dot{z-index:1;width:5px;height:5px;border:1px solid #e9b9ca;border-radius:50%;background:#10070c;box-shadow:0 0 8px rgba(216,140,168,.25)}.about-milestones p{margin:0;color:#d0c0c7;font-size:10px;line-height:1.5}
 @media(max-width:900px){.about-top-grid{grid-template-columns:1fr;gap:28px}.about-copy{max-width:760px}.about-bottom-grid{grid-template-columns:1fr 1fr;gap:30px;margin-top:44px}}
 @media(max-width:640px){.about-title{font-size:clamp(34px,9vw,46px);margin:22px 0 28px}.about-title br{display:none}.about-top-grid{gap:22px}.about-copy p{font-size:12px}.about-copy .about-lead{font-size:17px}.about-principle{padding:13px 0}.about-principle h3{font-size:13px}.about-principle p{font-size:10px}.about-bottom-grid{grid-template-columns:1fr;gap:30px;margin-top:34px}.about-degree-card>div{min-height:84px;padding:13px}.about-degree-card b{font-size:9px}.about-milestones ol:before{left:57px}.about-milestones li{grid-template-columns:38px 12px minmax(0,1fr);gap:13px;min-height:36px}.about-milestones p{font-size:10px}}
+.about-copy{text-align:left}
+.about-copy .about-lead{font:400 clamp(17px,1.75vw,22px)/1.42 "Bodoni Moda",Georgia,serif;letter-spacing:-.025em;color:#e8dce1}
+.about-copy p:not(.about-lead){font:400 11px/1.72 var(--sans);color:#bba8b0;margin-bottom:13px}
+.about-copy .about-lead em{font:italic 500 1.02em/1 "Bodoni Moda",Georgia,serif;color:#e9b9ca}
+.about-milestones ol:before{left:76px;top:9px;bottom:10px;background:rgba(216,140,168,.38)}
+.about-milestones li{grid-template-columns:54px 14px minmax(0,1fr);gap:15px;min-height:38px}
+.about-milestones time{font-size:8px;color:#c4b1ba;white-space:nowrap}
+.milestone-dot{width:6px;height:6px;border-color:#d88ca8;background:#10070c;box-shadow:0 0 0 2px rgba(216,140,168,.07)}
+.about-milestones p{font-size:10px;color:#d0c0c7}
+@media(max-width:640px){.about-copy .about-lead{font-size:18px;line-height:1.42}.about-copy p:not(.about-lead){font-size:11px}.about-milestones ol:before{left:61px}.about-milestones li{grid-template-columns:42px 14px minmax(0,1fr);gap:12px;min-height:37px}.about-milestones p{font-size:10px}}
