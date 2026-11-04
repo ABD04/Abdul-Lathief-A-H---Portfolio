@@ -360,3 +360,10 @@ body{background:linear-gradient(180deg,#10070c,#190b12 46%,#10070c);font-family:
 .milestone-dot{width:6px;height:6px;border-color:#d88ca8;background:#10070c;box-shadow:0 0 0 2px rgba(216,140,168,.07)}
 .about-milestones p{font-size:10px;color:#d0c0c7}
 @media(max-width:640px){.about-copy .about-lead{font-size:18px;line-height:1.42}.about-copy p:not(.about-lead){font-size:11px}.about-milestones ol:before{left:61px}.about-milestones li{grid-template-columns:42px 14px minmax(0,1fr);gap:12px;min-height:37px}.about-milestones p{font-size:10px}}
+.about-milestone-label{font:400 8px/1.2 var(--mono);letter-spacing:.14em;color:#b79ba6}
+.about-milestones ol:before{width:1px;background:rgba(216,140,168,.3)}
+.about-milestones li{min-height:38px;gap:14px}
+.about-milestones time{font:400 8px/1.35 var(--mono);letter-spacing:.02em;color:#ad9aa2}
+.about-milestones p{font:400 9px/1.5 var(--sans);color:#bcaeb4}
+.milestone-dot{width:6px;height:6px;border:1px solid #c889a0;box-shadow:0 0 0 2px rgba(216,140,168,.045)}
+@media(max-width:640px){.about-milestones li{min-height:36px;gap:12px}.about-milestones time{font-size:8px}.about-milestones p{font-size:9px}}
