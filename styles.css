@@ -184,3 +184,99 @@ body{overflow-x:clip}
 .hero-visual:after{display:none}.scene-stack{width:100%;height:100%}
 @media(max-width:1100px) and (min-width:681px){.hero{grid-template-columns:minmax(0,1fr) minmax(290px,.9fr);column-gap:20px}.hero-name{font-size:clamp(58px,8.4vw,104px)}.hero-visual{width:100%;height:250px}.hero-profession{font-size:7px}}
 @media(max-width:680px){.hero{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto;gap:18px;min-height:calc(100svh - 66px);padding:44px 6vw 26px;align-content:center;justify-items:stretch}.hero-copy{grid-column:1;grid-row:1;max-width:100%;text-align:left;align-items:flex-start}.hero-copy .eyebrow{justify-content:flex-start}.hero-name{font-size:clamp(58px,14vw,92px);line-height:.8;margin-bottom:16px;text-align:left}.hero-profession{font-size:7px;max-width:100%;text-align:left}.hero-lede{max-width:440px;font-size:12px;text-align:left;margin-bottom:16px}.hero-actions{justify-content:flex-start}.hero-note{justify-content:flex-start;margin-top:18px}.hero-visual{grid-column:1;grid-row:2;position:relative;inset:auto;width:min(100%,440px);height:clamp(190px,32vh,250px);justify-self:start;opacity:1;display:block}.hero-bottom{grid-column:1;grid-row:3;position:relative;inset:auto;align-self:end;width:100%;margin-top:2px}}
+
+/* Burgundy editorial art direction, with the original portfolio content and motion. */
+:root{
+  --ink:#f6edf0;--muted:#b7a5ae;--paper:#10070c;--white:#fff9fb;
+  --line:rgba(216,140,168,.16);--dark:#10070c;--dark-2:#190b12;
+  --cyan:#d88ca8;--lime:#e9b9ca;--blue:#941f4d;--violet:#941f4d;
+  --mono:"JetBrains Mono",monospace;--sans:"Geist",Inter,Arial,sans-serif;
+}
+html,body{background:#10070c;color:#f6edf0}
+body{background:linear-gradient(180deg,#10070c,#190b12 46%,#10070c);font-family:var(--sans)}
+.topbar{background:rgba(16,7,12,.9);border-bottom-color:rgba(216,140,168,.16);backdrop-filter:blur(16px)}
+.brand-mark span,.nav-contact span,.scroll-arrow,.card-arrow,.arrow-link span{color:#e9b9ca}
+.brand-name,.nav,.nav a{color:#d1bdc5}
+.nav a:hover,.nav a:focus-visible{color:#e9b9ca}
+.nav-contact{border-color:rgba(216,140,168,.34)}
+.hero{background:radial-gradient(ellipse at 70% 34%,rgba(110,23,56,.44),transparent 42%),radial-gradient(ellipse at 12% 84%,rgba(148,31,77,.2),transparent 38%),linear-gradient(130deg,#10070c,#190b12 56%,#27101c);}
+.hero:before{background:radial-gradient(circle,rgba(216,140,168,.18),transparent 68%);filter:blur(14px)}
+.hero:after{background:linear-gradient(180deg,transparent 65%,rgba(16,7,12,.58)),radial-gradient(ellipse at center,transparent 32%,rgba(16,7,12,.26))}
+.hero-name,.intro-content h2,.section-heading h2,.contact-inner h2,.project-meta h3,.timeline-main h3,.capability h3,.learning-item h4,.dialog-kicker{
+  font-family:"Fraunces","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  font-weight:400;letter-spacing:-.045em
+}
+.hero-name{line-height:.88;letter-spacing:-.055em}
+.name-outline{-webkit-text-stroke:1px rgba(233,185,202,.78)}
+.accent-text,.contact-inner h2 em,.work-section .section-heading h2 em{background:linear-gradient(100deg,#f0cbd8,#d88ca8 55%,#941f4d);color:transparent;background-clip:text;-webkit-background-clip:text}
+.section-kicker,.project-type,.column-label,.hero-bottom,.hero-note,.timeline-date,.current-pill,.learning-year,.visual-label,.visual-coordinate,.visual-index,.footer>span,.footer>a:last-of-type{font-family:var(--mono)}
+.eyebrow,.hero-lede,.intro-body p,.section-heading>p,.project-open>p,.role-description,.capability p,.learning-item p,.course-list,.award-copy,.contact-inner>p{color:#c4b1ba}
+.note-line{background:linear-gradient(90deg,#d88ca8,#941f4d)}
+.scroll-progress span{background:linear-gradient(90deg,#941f4d,#d88ca8,#e9b9ca);box-shadow:0 0 12px rgba(216,140,168,.55)}
+.ticker{background:linear-gradient(90deg,#6e1738,#941f4d 52%,#d88ca8);color:#fff5f8}
+.section,.intro-section,.work-section,.experience-section,.capability-section,.education-section,.contact-section{
+  color:#f6edf0;border-color:rgba(216,140,168,.16)
+}
+.intro-section,.experience-section,.education-section{background:radial-gradient(ellipse at 85% 15%,rgba(110,23,56,.22),transparent 36%),#10070c}
+.work-section{background:radial-gradient(ellipse at 10% 30%,rgba(148,31,77,.18),transparent 36%),#140911}
+.capability-section{background:radial-gradient(ellipse at 75% 10%,rgba(110,23,56,.2),transparent 36%),#190b12}
+.contact-section{background:radial-gradient(ellipse at 72% 40%,rgba(110,23,56,.32),transparent 38%),linear-gradient(125deg,#10070c,#27101c 62%,#190b12)}
+.section-kicker,.section-kicker span:first-child,.work-section .section-kicker span:first-child,.column-label,.project-type,.cap-index,.company,.education-section .column-label{color:#d88ca8}
+.section-heading h2,.intro-content h2,.work-section .section-heading h2,.experience-section .section-heading h2,.capability-section .section-heading h2,.education-section .section-heading h2{color:#f6edf0}
+.section-heading h2 em,.intro-content h2 em,.experience-section .section-heading h2 em,.capability-section .section-heading h2 em,.education-section .section-heading h2 em{color:#e9b9ca}
+.work-section .section-heading h2 em,.contact-inner h2 em{background:linear-gradient(95deg,#e9b9ca,#d88ca8);color:transparent;background-clip:text;-webkit-background-clip:text}
+.work-section .filter-button,.filter-button{background:rgba(255,249,251,.035);border-color:rgba(216,140,168,.24);color:#d3bec7}
+.work-section .filter-button.is-active,.work-section .filter-button:hover,.filter-button.is-active,.filter-button:hover{background:#941f4d;border-color:#d88ca8;color:#fff5f8}
+.project-card,.capability,.learning-item,.timeline-item,.project-dialog{border-color:rgba(216,140,168,.2)}
+.project-art{border-radius:16px;border-color:rgba(216,140,168,.22);box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.work-section .project-meta h3,.timeline-main h3,.capability h3,.learning-item h4{color:#f6edf0}
+.project-type,.section-footnote,.timeline-date,.learning-year,.language-row small{color:#c78da3}
+.timeline,.timeline-item,.capability-grid,.learning-item,.course-list,.language-row{border-color:rgba(216,140,168,.2)}
+.timeline-marker{border-color:#d88ca8}.current .timeline-marker{background:#d88ca8;box-shadow:0 0 0 4px rgba(216,140,168,.14),0 0 18px rgba(216,140,168,.36)}
+.timeline-marker:after{background:rgba(216,140,168,.34)}
+.company span,.timeline-date,.role-tags span{color:#c4b1ba}
+.role-tags span{background:rgba(216,140,168,.09);border-color:rgba(216,140,168,.16)}
+.current-pill{background:rgba(216,140,168,.14);color:#e9b9ca;border-color:rgba(216,140,168,.27)}
+.capability,.education-section .learning-item{background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(110,23,56,.025))}
+.button-light{background:linear-gradient(105deg,#e9b9ca,#d88ca8 58%,#941f4d);color:#190b12;box-shadow:0 10px 34px rgba(110,23,56,.32)}
+.button-light:hover{box-shadow:0 14px 42px rgba(148,31,77,.42)}
+.arrow-link,.text-link,.contact-link{color:#f6edf0}
+.contact-inner h2 em{color:#e9b9ca}
+.contact-decoration{color:rgba(216,140,168,.07)}
+.footer{background:#0b0509;border-top-color:rgba(216,140,168,.16);color:#a98e9a}
+.footer>span,.footer>a:last-of-type{color:#c4a9b5}
+.project-dialog{background:#190b12;color:#f6edf0;border-color:rgba(216,140,168,.3)}
+.project-dialog .dialog-copy{color:#c4b1ba}.project-dialog .dialog-kicker{color:#d88ca8}.project-dialog .dialog-tags span{background:rgba(148,31,77,.22);color:#f0cbd8}.dialog-close{color:#e9b9ca}
+.ai-scene-card{border-color:rgba(216,140,168,.2);background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(110,23,56,.04))}
+.ai-scene-card:hover{border-color:rgba(216,140,168,.58);box-shadow:0 20px 50px rgba(0,0,0,.34),0 0 30px rgba(148,31,77,.18)}
+.ai-scene-caption span{color:#e9b9ca}
+.ai-scene-caption b{font-family:"Fraunces",Georgia,serif;font-size:16px;font-weight:400;color:#f6edf0}
+.ai-scene-caption small{color:#c4b1ba}
+.hero-visual{border:1px solid rgba(216,140,168,.28);box-shadow:0 28px 80px rgba(0,0,0,.35),0 0 44px rgba(110,23,56,.18)}
+.hero-visual .visual-grid{background-image:linear-gradient(rgba(216,140,168,.065) 1px,transparent 1px),linear-gradient(90deg,rgba(216,140,168,.065) 1px,transparent 1px)}
+.hero-visual .visual-orbit{border-color:rgba(216,140,168,.28)}
+.hero-visual .center-ring{border-color:#d88ca8;box-shadow:0 0 40px rgba(216,140,168,.15),inset 0 0 25px rgba(216,140,168,.09)}
+.hero-visual .center-core{background:#e9b9ca;box-shadow:0 0 22px #d88ca8}
+.hero-visual .center-caption{color:#fff5f8}
+.scene-card,.project-card,.ai-scene-card,.capability,.learning-item,.timeline-item,.filter-button,.button,.nav a,.contact-link{transition-timing-function:cubic-bezier(.16,1,.3,1)}
+@media(max-width:680px){.intro-section,.experience-section,.capability-section,.education-section{background-color:#10070c}.hero-visual{border-color:rgba(216,140,168,.24)}}
+
+/* Portrait-led opening, framed like the reference while keeping the AI scenes below. */
+.hero-portrait{grid-column:2;grid-row:1;position:relative;z-index:1;justify-self:end;align-self:center;width:min(100%,470px);height:min(66svh,590px);min-height:390px;margin:0;isolation:isolate;perspective:1200px}
+.hero-portrait:before{content:"";position:absolute;z-index:-1;inset:-12% -8%;border:1px solid rgba(216,140,168,.13);border-radius:50%;transform:rotate(-18deg);box-shadow:0 0 70px rgba(110,23,56,.16)}
+.hero-portrait:after{content:"";position:absolute;z-index:-1;inset:8% -12%;border:1px dashed rgba(216,140,168,.12);border-radius:50%;transform:rotate(22deg)}
+.portrait-frame{position:absolute;inset:0 5% 30px;overflow:hidden;border:1px solid rgba(216,140,168,.48);border-radius:48% 48% 18px 18px;padding:7px;background:linear-gradient(145deg,rgba(216,140,168,.22),rgba(110,23,56,.12));box-shadow:0 28px 90px rgba(0,0,0,.48),0 0 42px rgba(110,23,56,.22);transition:transform .85s cubic-bezier(.16,1,.3,1),border-color .5s,box-shadow .5s}
+.portrait-frame:after{content:"";position:absolute;inset:7px;border-radius:inherit;pointer-events:none;background:linear-gradient(180deg,rgba(16,7,12,.02) 42%,rgba(16,7,12,.5) 100%),linear-gradient(115deg,rgba(216,140,168,.09),transparent 48%);mix-blend-mode:screen}
+.portrait-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 24%;border-radius:inherit;filter:saturate(.84) contrast(1.04);animation:portrait-breathe 16s ease-in-out infinite alternate}
+@keyframes portrait-breathe{from{transform:scale(1)}to{transform:scale(1.045)}}
+.portrait-corner{position:absolute;width:29px;height:29px;z-index:2;border-color:#e9b9ca;border-style:solid;opacity:.9}
+.portrait-corner-tl{top:20%;left:0;border-width:1px 0 0 1px}.portrait-corner-br{right:0;bottom:18%;border-width:0 1px 1px 0}
+.portrait-caption{position:absolute;left:5%;right:5%;bottom:0;display:flex;justify-content:space-between;gap:12px;color:#c78da3;font:9px var(--mono);letter-spacing:.1em}
+.portrait-chip{position:absolute;z-index:3;display:grid;gap:5px;margin:0;padding:13px 16px;border:1px solid rgba(216,140,168,.27);border-radius:12px;background:rgba(25,11,18,.82);backdrop-filter:blur(14px);box-shadow:0 18px 42px rgba(0,0,0,.28);animation:chip-float 6.5s ease-in-out infinite}
+.portrait-chip span{font:8px var(--mono);letter-spacing:.1em;color:#d88ca8}.portrait-chip b{font:500 12px var(--sans);color:#f6edf0}
+.portrait-chip-a{left:-10%;top:19%}.portrait-chip-b{right:-5%;bottom:20%;animation-delay:-3s}
+@keyframes chip-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media(hover:hover) and (pointer:fine){.hero-portrait:hover .portrait-frame{transform:rotateY(-3deg) translateY(-4px);border-color:rgba(233,185,202,.8);box-shadow:0 36px 100px rgba(0,0,0,.54),0 0 54px rgba(110,23,56,.3)}}
+@media(max-width:1100px) and (min-width:681px){.hero-portrait{width:100%;height:clamp(360px,58vh,520px);min-height:340px}.portrait-chip-a{left:-5%}.portrait-chip-b{right:-4%}}
+@media(max-width:680px){.hero{grid-template-rows:auto auto auto;min-height:calc(100svh - 66px);padding:37px 6vw 24px;gap:24px}.hero-portrait{grid-column:1;grid-row:2;justify-self:center;width:min(82vw,360px);height:clamp(310px,48svh,430px);min-height:0}.portrait-frame{inset:0 5% 26px}.portrait-caption{font-size:7px}.portrait-chip{padding:10px 12px}.portrait-chip span{font-size:7px}.portrait-chip b{font-size:10px}.portrait-chip-a{left:-4%;top:17%}.portrait-chip-b{right:-4%;bottom:17%}.hero-bottom{grid-column:1;grid-row:3;position:relative;inset:auto;width:100%;margin:0}.hero-bottom-right{font-size:7px}}
+@media(prefers-reduced-motion:reduce){.portrait-frame img,.portrait-chip{animation:none}.portrait-frame{transition:none}}
