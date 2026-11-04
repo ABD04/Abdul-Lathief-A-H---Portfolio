@@ -14,6 +14,10 @@ navigation?.querySelectorAll('a').forEach((link) => {
   });
 });
 
+document.querySelector('.hero-actions .button-light[href="#work"]')?.addEventListener('click', (event) => {
+  event.currentTarget.classList.add('is-activated');
+});
+
 const filterButtons = document.querySelectorAll('.filter-button');
 const projectCards = document.querySelectorAll('.project-card');
 
