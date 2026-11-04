@@ -306,7 +306,5 @@ body{background:linear-gradient(180deg,#10070c,#190b12 46%,#10070c);font-family:
 .hero-socials a{display:inline-flex;align-items:center;gap:8px;color:#c4b1ba;font-size:13px;transition:color .25s,transform .25s}
 .hero-socials a:hover,.hero-socials a:focus-visible{color:#f6edf0;transform:translateY(-2px)}
 .hero-socials svg{width:15px;height:15px;fill:currentColor}
-.resume-note{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:30px 0 0;padding:16px 18px;border:1px solid rgba(216,140,168,.2);border-radius:14px;background:rgba(110,23,56,.09);color:#c4b1ba;font-size:13px}
-.resume-note b{color:#f6edf0;font-weight:600}.resume-note a{color:#e9b9ca;font-weight:600}.resume-note a span{margin-left:5px}
 @media(max-width:1100px){.nav{gap:15px}.nav-resume{padding:10px 15px}.brand-name{font-size:12px}}
-@media(max-width:680px){.topbar{height:66px}.brand-mark{width:46px;height:42px;border-radius:13px;font-size:20px}.brand-name{font-size:11px}.nav{gap:0}.role-pill{font-size:clamp(10px,3vw,13px);padding:9px 12px;letter-spacing:0}.hero-actions{gap:10px}.hero-actions .button{font-size:10px;gap:12px;padding:11px 14px}.hero-socials{margin-top:14px}.hero-socials a{font-size:12px}.resume-note{gap:8px 13px;font-size:12px}}
+@media(max-width:680px){.topbar{height:66px}.brand-mark{width:46px;height:42px;border-radius:13px;font-size:20px}.brand-name{font-size:11px}.nav{gap:0}.role-pill{font-size:clamp(10px,3vw,13px);padding:9px 12px;letter-spacing:0}.hero-actions{gap:10px}.hero-actions .button{font-size:10px;gap:12px;padding:11px 14px}.hero-socials{margin-top:14px}.hero-socials a{font-size:12px}}

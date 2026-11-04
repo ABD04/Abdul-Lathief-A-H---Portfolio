@@ -15,6 +15,7 @@ The site uses plain HTML, CSS, and JavaScript. Google Fonts are loaded from the 
 ## Files
 
 - `Abdul Lathief Portfolio.html` — main page content and structure
+- `resume.html` — formatted, printable resume linked from the portfolio
 - `index.html` — default entry point
 - `styles.css` — responsive styling and color theme
 - `script.js` — mobile navigation, project filtering, project detail dialogs, and footer year
