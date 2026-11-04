@@ -308,3 +308,11 @@ body{background:linear-gradient(180deg,#10070c,#190b12 46%,#10070c);font-family:
 .hero-socials svg{width:15px;height:15px;fill:currentColor}
 @media(max-width:1100px){.nav{gap:15px}.nav-resume{padding:10px 15px}.brand-name{font-size:12px}}
 @media(max-width:680px){.topbar{height:66px}.brand-mark{width:46px;height:42px;border-radius:13px;font-size:20px}.brand-name{font-size:11px}.nav{gap:0}.role-pill{font-size:clamp(10px,3vw,13px);padding:9px 12px;letter-spacing:0}.hero-actions{gap:10px}.hero-actions .button{font-size:10px;gap:12px;padding:11px 14px}.hero-socials{margin-top:14px}.hero-socials a{font-size:12px}}
+
+/* Quiet, continuously moving career highlights. */
+.ticker{height:58px;overflow:hidden;background:rgba(16,7,12,.72);color:#c4b1ba;border-top:1px solid rgba(216,140,168,.14);border-bottom:1px solid rgba(216,140,168,.14)}
+.ticker-track{gap:27px;padding:0 24px;font:400 11px/1 var(--sans);letter-spacing:.025em;color:#c4b1ba;animation-duration:36s}
+.ticker-track span{font:400 11px/1 var(--sans);letter-spacing:.025em;color:#c4b1ba}
+.ticker-track i{display:block;flex:0 0 4px;width:4px;height:4px;border-radius:50%;background:#d88ca8;font-size:0;opacity:.85}
+@media(max-width:680px){.ticker{height:50px}.ticker-track{gap:19px;padding:0 16px}.ticker-track span{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
