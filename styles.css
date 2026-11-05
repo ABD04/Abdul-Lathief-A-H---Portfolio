@@ -430,3 +430,5 @@ body{background:linear-gradient(180deg,#10070c,#190b12 46%,#10070c);font-family:
 .portrait-frame:before,.portrait-frame:after{content:none!important;display:none!important;background:none!important;box-shadow:none!important}
 .portrait-frame img{background:transparent!important;border-radius:0!important;filter:saturate(.93) contrast(1.03) drop-shadow(0 20px 28px rgba(0,0,0,.48)) drop-shadow(0 0 16px rgba(148,31,77,.12))}
 @media(max-width:680px){.hero-portrait:after{inset:1% 2% 15%}}
+.about-reference{min-height:calc(100svh - 76px);width:100%;background-color:#10070c;background-image:radial-gradient(ellipse at 86% 14%,rgba(110,23,56,.12),transparent 32%);background-repeat:no-repeat;background-size:100% 100%}
+@media(max-width:680px){.about-reference{min-height:calc(100svh - 66px);background-color:#10070c;background-size:100% 100%}}
