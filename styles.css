@@ -389,6 +389,13 @@ body{background:linear-gradient(180deg,#10070c,#190b12 46%,#10070c);font-family:
 .about-degree-card .about-institute-name{font-size:14px;line-height:1.6}
 .about-institute-name span{white-space:nowrap}
 @media(max-width:640px){.about-degree-card .about-degree-name,.about-degree-card .about-institute-name{font-size:11px}.about-institute-name span{white-space:normal}}
+.about-bottom-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.about-degree-card{grid-template-columns:1fr 1fr}
+.about-degree-card>div{min-height:118px;padding:18px 24px}
+.about-degree-card .about-degree-name,.about-degree-card .about-institute-name{font-size:17px;line-height:1.5}
+.about-institute-name span{font:inherit;letter-spacing:inherit;color:inherit;white-space:nowrap}
+@media(max-width:900px){.about-bottom-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.about-degree-card>div{min-height:100px;padding:15px}.about-degree-card .about-degree-name,.about-degree-card .about-institute-name{font-size:11px}.about-institute-name span{white-space:normal}}
 .about-milestones{--milestone-date-col:54px;--milestone-marker-col:14px;--milestone-gap:14px}
 .about-milestones ol:before{left:calc(var(--milestone-date-col) + var(--milestone-gap) + var(--milestone-marker-col)/2);transform:translateX(-50%)}
 .about-milestones li{grid-template-columns:var(--milestone-date-col) var(--milestone-marker-col) minmax(0,1fr);gap:var(--milestone-gap)}
