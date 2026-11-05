@@ -401,6 +401,11 @@ body{background:linear-gradient(180deg,#10070c,#190b12 46%,#10070c);font-family:
 .portrait-frame:after{inset:10px;z-index:1;border-radius:inherit;background:linear-gradient(180deg,rgba(16,7,12,.01) 54%,rgba(16,7,12,.22) 100%),linear-gradient(115deg,rgba(216,140,168,.07),transparent 48%)}
 .portrait-caption{width:100%;color:#d3a8b8}
 @media(max-width:680px){.portrait-frame{aspect-ratio:1199/1312;padding:8px}.portrait-frame:after{inset:8px}.hero-portrait:before{inset:-5% -7% -4%}}
+.hero-portrait:before{inset:-12% -18% -8%;border:0;border-radius:50%;transform:none;background:radial-gradient(ellipse at 50% 42%,rgba(224,140,170,.32),rgba(148,31,77,.17) 42%,rgba(148,31,77,0) 73%);filter:blur(18px);box-shadow:none}
+.portrait-frame{width:100%;aspect-ratio:4/5;border-radius:50% 50% 0 0/35% 35% 0 0;padding:9px;border:1px solid rgba(233,185,202,.7);background:radial-gradient(ellipse at 50% 22%,#f0d4df 0%,#dfb4c4 48%,#87566a 100%);box-shadow:0 0 0 7px rgba(16,7,12,.9),0 0 0 8px rgba(216,140,168,.3),0 34px 85px rgba(0,0,0,.56),0 0 70px rgba(148,31,77,.3)}
+.portrait-frame img{position:relative;z-index:0;object-fit:contain;object-position:center top;transform:scale(1.38);transform-origin:50% 8%;filter:drop-shadow(0 24px 32px rgba(0,0,0,.38)) drop-shadow(0 0 24px rgba(148,31,77,.18))}
+.portrait-frame:after{content:"";inset:9px;z-index:1;border-radius:inherit;background:linear-gradient(180deg,rgba(16,7,12,0) 65%,rgba(16,7,12,.64) 100%),radial-gradient(ellipse at 50% 35%,rgba(255,237,244,.08),transparent 68%);pointer-events:none}
+@media(max-width:680px){.portrait-frame{aspect-ratio:4/5;padding:8px}.portrait-frame:after{inset:8px}.portrait-frame img{transform:scale(1.38);transform-origin:50% 8%}.hero-portrait:before{inset:-8% -12% -5%}}
 @media(max-width:640px){.about-degree-card>div{min-height:100px;padding:15px}.about-degree-card .about-degree-name,.about-degree-card .about-institute-name{font-size:11px}.about-institute-name span{white-space:normal}}
 .about-bottom-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}
 .about-degree-card{width:100%;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr)}
