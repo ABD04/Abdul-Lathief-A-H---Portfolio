@@ -376,6 +376,15 @@ body{background:linear-gradient(180deg,#10070c,#190b12 46%,#10070c);font-family:
 .about-principle h3{font:400 clamp(21px,1.65vw,29px)/1.2 "Bodoni Moda",Georgia,serif;letter-spacing:-.035em;color:#f0e7eb}
 .about-principle p{font-size:clamp(13px,.9vw,16px);line-height:1.6;color:#bba8b0}
 @media(max-width:640px){.about-copy .about-lead{font-size:21px;line-height:1.4}.about-copy p:not(.about-lead){font-size:13px;line-height:1.65}.about-principle{grid-template-columns:25px 1fr;gap:12px;padding:15px 0}.about-principle h3{font-size:21px}.about-principle p{font-size:13px}}
+.about-degree-card>div{min-height:145px;padding:23px 26px}
+.about-degree-card>div>span{font-size:12px;letter-spacing:.14em}
+.about-degree-card b{font-size:17px;line-height:1.5}
+.about-degree-card .about-cgpa strong{font-size:68px}
+.about-milestone-label{font-size:11px;letter-spacing:.14em}
+.about-milestones li{min-height:56px}
+.about-milestones time{font-size:12px}
+.about-milestones p{font-size:15px;line-height:1.55}
+@media(max-width:640px){.about-degree-card>div{min-height:100px;padding:15px}.about-degree-card>div>span{font-size:9px}.about-degree-card b{font-size:12px}.about-degree-card .about-cgpa strong{font-size:46px}.about-milestone-label{font-size:9px}.about-milestones li{min-height:42px}.about-milestones time{font-size:9px}.about-milestones p{font-size:11px}}
 .about-milestones{--milestone-date-col:54px;--milestone-marker-col:14px;--milestone-gap:14px}
 .about-milestones ol:before{left:calc(var(--milestone-date-col) + var(--milestone-gap) + var(--milestone-marker-col)/2);transform:translateX(-50%)}
 .about-milestones li{grid-template-columns:var(--milestone-date-col) var(--milestone-marker-col) minmax(0,1fr);gap:var(--milestone-gap)}
